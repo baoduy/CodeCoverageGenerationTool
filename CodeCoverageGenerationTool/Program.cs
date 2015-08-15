@@ -20,6 +20,10 @@ namespace CodeCoverageGenerationTool
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new Main());
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             finally
             {
                 if (Application.MessageLoop)

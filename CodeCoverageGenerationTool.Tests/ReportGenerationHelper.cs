@@ -11,8 +11,7 @@ namespace CodeCoverageGenerationTool.Tests
         public async Task GenerateReport()
         {
             var str = await CodeCoverageGenerationTool.ReportGenerationHelper.GenerateReport(
-                @"C:\!Steven\!TFS\HBD\HBD.Framework\HBD.Framework.Test\bin\Debug\HBD.Framework.Test.dll",
-                Constants.AppSettings.DefaultOutputFolder);
+                @"C:\!Steven\!TFS\HBD\HBD.Framework\HBD.Framework.Test\bin\Debug\HBD.Framework.Test.dll", null);
 
             Assert.IsNotNull(str);
         }

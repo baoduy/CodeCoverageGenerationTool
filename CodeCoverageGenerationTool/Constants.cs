@@ -24,16 +24,19 @@ namespace CodeCoverageGenerationTool
                 get
                 {
                     var path = string.Empty;
-                    var key =
+                    var keys =
                         Environment.GetEnvironmentVariables(EnvironmentVariableTarget.Machine)
                             .Keys.Cast<string>()
-                            .LastOrDefault(k => k.EndsWith("COMNTOOLS"));
+                            .Where(k => k.EndsWith("COMNTOOLS"));
 
-                    if (key == null) return path;
-
-                    path = Environment.GetEnvironmentVariable(key);
-                    path = Path.GetFullPath(path + @"\..\IDE\CommonExtensions\Microsoft\TestWindow\VSTest.Console.exe");
-                    if (!System.IO.File.Exists(path)) throw new FileNotFoundException(path);
+                    foreach (var key in keys)
+                    {
+                        path = Environment.GetEnvironmentVariable(key);
+                        path = Path.GetFullPath(path + @"\..\IDE\CommonExtensions\Microsoft\TestWindow\VSTest.Console.exe");
+                        if (File.Exists(path))break;
+                    }
+                    
+                    if (!File.Exists(path)) throw new FileNotFoundException(path);
                     return path;
                 }
             }
