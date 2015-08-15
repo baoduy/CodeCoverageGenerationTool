@@ -1,9 +1,9 @@
 # CodeCoverageGenerationTool
 The latest releases can be downloaded from [releases](https://github.com/baoduy/CodeCoverageGenerationTool/releases).
 
-[![Nuget](https://img.shields.io/nuget/dt/opencover.svg)](https://www.nuget.org/packages/CodeCoverageGenerationTool)
-[![Nuget](https://img.shields.io/nuget/v/opencover.svg)](https://www.nuget.org/packages/CodeCoverageGenerationTool)
-[![Nuget](https://img.shields.io/nuget/vpre/opencover.svg)](https://www.nuget.org/packages/CodeCoverageGenerationTool)
+[![Nuget](https://img.shields.io/nuget/dt/CodeCoverageGenerationTool.svg)](https://www.nuget.org/packages/CodeCoverageGenerationTool)
+[![Nuget](https://img.shields.io/nuget/v/CodeCoverageGenerationTool.svg)](https://www.nuget.org/packages/CodeCoverageGenerationTool)
+[![Nuget](https://img.shields.io/nuget/vpre/CodeCoverageGenerationTool.svg)](https://www.nuget.org/packages/CodeCoverageGenerationTool)
 
 ### Master 
 The primary repo for the project is [on GitHub](https://github.com/baoduy/CodeCoverageGenerationTool) and is also where the [wiki](https://github.com/baoduy/CodeCoverageGenerationTool/wiki) and [issues](https://github.com/baoduy/CodeCoverageGenerationTool/issues) are managed from.
