@@ -1,0 +1,2 @@
+﻿https://www.nuget.org/api/v2/package/OpenCover/4.6.166
+https://www.nuget.org/api/v2/package/ReportGenerator/2.1.8.0
