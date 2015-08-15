@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btn_About = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_Generate = new System.Windows.Forms.Button();
             this.grInput = new System.Windows.Forms.GroupBox();
@@ -38,7 +39,6 @@
             this.txt_NamespaceFilter = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txt_Output = new System.Windows.Forms.TextBox();
-            this.btn_About = new System.Windows.Forms.ToolStripButton();
             this.folderDialog1 = new CodeCoverageGenerationTool.UserControls.FolderDialog();
             this.filePickup1 = new CodeCoverageGenerationTool.UserControls.FilePickupDialog();
             this.toolStrip1.SuspendLayout();
@@ -50,13 +50,25 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btn_About});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(683, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(683, 48);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btn_About
+            // 
+            this.btn_About.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btn_About.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_About.Image = ((System.Drawing.Image)(resources.GetObject("btn_About.Image")));
+            this.btn_About.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_About.Name = "btn_About";
+            this.btn_About.Size = new System.Drawing.Size(44, 45);
+            this.btn_About.Text = "toolStripButton1";
+            this.btn_About.Click += new System.EventHandler(this.btn_About_Click);
             // 
             // groupBox1
             // 
@@ -85,7 +97,7 @@
             this.grInput.Controls.Add(this.folderDialog1);
             this.grInput.Controls.Add(this.filePickup1);
             this.grInput.Dock = System.Windows.Forms.DockStyle.Top;
-            this.grInput.Location = new System.Drawing.Point(0, 25);
+            this.grInput.Location = new System.Drawing.Point(0, 48);
             this.grInput.Name = "grInput";
             this.grInput.Size = new System.Drawing.Size(683, 98);
             this.grInput.TabIndex = 2;
@@ -113,7 +125,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 25);
+            this.label1.Size = new System.Drawing.Size(104, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Namespace Filter";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -121,19 +133,19 @@
             // txt_NamespaceFilter
             // 
             this.txt_NamespaceFilter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_NamespaceFilter.Location = new System.Drawing.Point(98, 3);
+            this.txt_NamespaceFilter.Location = new System.Drawing.Point(113, 3);
             this.txt_NamespaceFilter.Margin = new System.Windows.Forms.Padding(3, 3, 45, 3);
             this.txt_NamespaceFilter.Name = "txt_NamespaceFilter";
-            this.txt_NamespaceFilter.Size = new System.Drawing.Size(534, 20);
+            this.txt_NamespaceFilter.Size = new System.Drawing.Size(519, 20);
             this.txt_NamespaceFilter.TabIndex = 1;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.txt_Output);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.Location = new System.Drawing.Point(0, 123);
+            this.groupBox3.Location = new System.Drawing.Point(0, 146);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(683, 533);
+            this.groupBox3.Size = new System.Drawing.Size(683, 510);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Output";
@@ -147,19 +159,8 @@
             this.txt_Output.Name = "txt_Output";
             this.txt_Output.ReadOnly = true;
             this.txt_Output.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txt_Output.Size = new System.Drawing.Size(677, 514);
+            this.txt_Output.Size = new System.Drawing.Size(677, 491);
             this.txt_Output.TabIndex = 0;
-            // 
-            // btn_About
-            // 
-            this.btn_About.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btn_About.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_About.Image = ((System.Drawing.Image)(resources.GetObject("btn_About.Image")));
-            this.btn_About.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_About.Name = "btn_About";
-            this.btn_About.Size = new System.Drawing.Size(23, 22);
-            this.btn_About.Text = "toolStripButton1";
-            this.btn_About.Click += new System.EventHandler(this.btn_About_Click);
             // 
             // folderDialog1
             // 

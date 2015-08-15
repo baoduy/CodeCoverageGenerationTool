@@ -58,7 +58,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(449, 427);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(534, 409);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -68,7 +68,7 @@
             this.label1.Location = new System.Drawing.Point(6, 3);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(3);
-            this.label1.Size = new System.Drawing.Size(76, 19);
+            this.label1.Size = new System.Drawing.Size(85, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Version:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -76,10 +76,10 @@
             // lb_Version
             // 
             this.lb_Version.AutoSize = true;
-            this.lb_Version.Location = new System.Drawing.Point(88, 3);
+            this.lb_Version.Location = new System.Drawing.Point(97, 3);
             this.lb_Version.Name = "lb_Version";
             this.lb_Version.Padding = new System.Windows.Forms.Padding(3);
-            this.lb_Version.Size = new System.Drawing.Size(37, 19);
+            this.lb_Version.Size = new System.Drawing.Size(40, 21);
             this.lb_Version.TabIndex = 1;
             this.lb_Version.Text = "1.1.0";
             this.lb_Version.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -88,10 +88,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(6, 22);
+            this.label2.Location = new System.Drawing.Point(6, 24);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(3);
-            this.label2.Size = new System.Drawing.Size(76, 20);
+            this.label2.Size = new System.Drawing.Size(85, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Report Issue:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -100,23 +100,24 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel1.Location = new System.Drawing.Point(88, 22);
+            this.linkLabel1.Location = new System.Drawing.Point(97, 24);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Padding = new System.Windows.Forms.Padding(3);
-            this.linkLabel1.Size = new System.Drawing.Size(355, 20);
+            this.linkLabel1.Size = new System.Drawing.Size(431, 20);
             this.linkLabel1.TabIndex = 3;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Report";
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Location = new System.Drawing.Point(6, 42);
+            this.label3.Location = new System.Drawing.Point(6, 44);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(3);
-            this.label3.Size = new System.Drawing.Size(76, 19);
+            this.label3.Size = new System.Drawing.Size(85, 21);
             this.label3.TabIndex = 4;
             this.label3.Text = "Third parties:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -125,10 +126,10 @@
             // 
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.webBrowser1.IsWebBrowserContextMenuEnabled = false;
-            this.webBrowser1.Location = new System.Drawing.Point(88, 45);
+            this.webBrowser1.Location = new System.Drawing.Point(97, 47);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(355, 376);
+            this.webBrowser1.Size = new System.Drawing.Size(431, 356);
             this.webBrowser1.TabIndex = 5;
             this.webBrowser1.Visible = false;
             this.webBrowser1.WebBrowserShortcutsEnabled = false;
@@ -138,7 +139,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 427);
+            this.ClientSize = new System.Drawing.Size(534, 409);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

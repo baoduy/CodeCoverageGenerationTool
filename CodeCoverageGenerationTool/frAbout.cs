@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -27,16 +28,19 @@ namespace CodeCoverageGenerationTool
                     .Cast<AssemblyDescriptionAttribute>().FirstOrDefault();
             this.lb_Version.Text = attribute?.Description;
 
-            if (System.IO.File.Exists("Thirdparties.html"))
-            {
-                var html = System.IO.File.ReadAllText("Thirdparties.html");
-                this.webBrowser1.DocumentText = html;
-            }
+            if (!System.IO.File.Exists("Thirdparties.html")) return;
+            var html = System.IO.File.ReadAllText("Thirdparties.html");
+            this.webBrowser1.DocumentText = html;
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             this.webBrowser1.Visible = true;
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(Constants.AppSettings.ReportIssueUrl);
         }
     }
 }

@@ -16,8 +16,8 @@ namespace CodeCoverageGenerationTool
             public static string ReportGeneratorTool
                 => System.Configuration.ConfigurationManager.AppSettings["ReportGeneratorTool"];
 
-            public static string DefaultOutputFolder
-                => System.Configuration.ConfigurationManager.AppSettings["DefaultOutputFolder"];
+            public static string ReportIssueUrl
+                => System.Configuration.ConfigurationManager.AppSettings["ReportIssueUrl"];
 
             public static string MSTest
             {
